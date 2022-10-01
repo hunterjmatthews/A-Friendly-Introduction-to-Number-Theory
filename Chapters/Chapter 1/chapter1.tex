@@ -1,0 +1,111 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{amssymb}
+
+\title{%
+  A Friendly Introduction to Number Theory \\
+  \large Chapter 1: What is Number Theory? \\
+    Solutions}
+\author{Hunter Matthews}
+\date{09/01/2022}
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{Chapter 1: What Is Number Theory?}
+\subsection{Exercise 1}
+\textbf{Question:} The first two numbers that are both squares and triangles are 1 and 36. Find the next one
+and, if possible, the one after that. Can you figure out an efficient way to find triangular square numbers? Do you think that there are infinitely many?\\
+\\\textbf{Solution:} You could write a simple program that prints out the first such numbers $n$ such that $n\leq 100000$. You will get 1, 36, 1225, and 41616. While this method will work, it is not the most efficient way to generate triangular-square numbers. An efficient method would be to construct a sequence $\{a_n:\forall n\in\mathbb{N}\}$ which follows a recurrent condition
+\begin{equation*}
+\begin{split}
+a_1 = 1
+\\a_2 = 6
+\\a_{n+2}=6\cdot a_{n+1}-a_n
+\end{split}
+\end{equation*}
+The square of numbers $a_n$ would be triangular-square numbers. Hence, there are infinitely many such numbers.
+\newpage
+\subsection{Exercise 2}
+\textbf{Question:} Try adding up the first few odd numbers and see if the numbers you get satisfy some sort of pattern. Once you find the pattern, express it as a formula. Give a geometric verification that your formula is correct.\\
+\\\textbf{Solution:} For the first few odd n umbers, we have
+\begin{equation*}
+\begin{split}
+1 = 1 = 1^2
+\\1 + 3 = 4 = 2^2
+\\1 + 3 + 5 = 8 = 3^2
+\\\sum_{i = 1}^n (2\cdot i + 1) = n^2
+\end{split}
+\end{equation*}
+To get from the square of $n^2$ to $(n+1)^2$, we need to add two sides of length $n$ and a diagonal element. Therefore, $(n+1)^2-n^2=2\cdot n+1$. If $n^2$ was the sum of the first odd number $n$ then $(n+1)^2$ is the sum of the first odd numbers $n+1$.
+\newpage
+\subsection{Exercise 3}
+\textbf{Question:} The consecutive odd numbers 3, 5, and 7 are all primes. Are there infinitely many such “prime triplets”? That is, are there infinitely many prime numbers $p$ such that $p+2$ and $p+4$ are also primes?\\
+\\\textbf{Solution:} If we assume $p$ is not 3, then the remainder of $p$ when divided by 3 is either 1 or 2. Hence, either $p+2$ or $p+4$ is divisible by 3 meaning that there is only one such triple. It has been conjectured that there are infinitely many primes $p$ such that $p+2$ and $p+6$ are prime, but this has yet to be proven. Similarity, it has been conjectured that there are infinitely many primes $p$ such that $p+4$ and $p+6$ are prime, but this has yet to be proven.
+\newpage
+\subsection{Exercise 4}
+\textbf{Question:} It is generally believed that infinitely many primes have the form $N^2+1$, although no one knows for sure.\\
+\textbf{(a)} Do you think that there are infinitely many primes of the form $N^2-1$?\\
+\textbf{(b)} Do you think that there are infinitely many primes of the form $N^2-2$?\\
+\textbf{(c)} How about of the form $N^2-3$? How about $N^2-4$?\\
+\textbf{(d)} Which values of a do you think give infinitely many primes of the form $N2-a$\\
+\\\textbf{Solution:}\\
+\textbf{(a)} Since $N^2-1 = (N-1)(N+1)$, $N^2-1$ will never be prime if $N\geq 2$.\\
+\textbf{(b)} Yes, it is very likely that there are infinitely many primes of this form.\\
+\textbf{(c)} Yes, it is very likely that there are infinitely many primes of the form $N^2-3$. However, for $N^2-4 = (N-2)\cdot(N+2)$ and is only prime for $N = 3$.\\
+\textbf{(d)} If $a$ is a perfect square, say $a = b^2$, then there will not be infinitely many primes of the form $N^2-a$ since we have $N^2-a = N^2-b^2 = (N-b)(N+b)$. Hence, as long as $a$ is not a perfect square, then it is conjectured that there are infinitely many primes.
+\newpage
+\subsection{Exercise 5}
+\textbf{Question:} The following two lines indicate another way to derive the formula for the sum of the first $n$ integers by rearranging the terms in the sum. Fill in the details.
+\begin{equation*}
+\begin{split}
+1+2+3+\cdot\cdot\cdot+n = (1+n)+(2+(n-1))+(3+(n-2))+\cdot\cdot\cdot
+\\ = (1+n)+(1+n)+(1+n)+\cdot\cdot\cdot
+\end{split}
+\end{equation*}
+How many copies of $n+1$ are in there in the second line? You may need to consider the cases of odd $n$ and even $n$ separately. If that's not clear, first try writing it out explicitly for $n = 6$ and $n = 7$.\\
+\\\textbf{Solution:} Suppose that $n$ is even. Then we get $\dfrac{n}{2}$ copies of $1+n$, so the total is
+\begin{equation*}
+\dfrac{n}{2}(1+n)=\dfrac{n^2+n}{2}
+\end{equation*}
+Next, suppose that $n$ is odd. Then we get $\dfrac{n-1}{2}$ copies of $1+n$ and also the middle term $\dfrac{n+1}{2}$ which hasn't yet been counted. To illustrate, let $n = 9$. Then we have
+\begin{equation*}
+1+2+\cdot\cdot\cdot+9 = (1+9)+(2+8)+(3+7)+(4+6)+5
+\end{equation*}
+As you can see, we get 4 copies of 10, and 1 copy of 5. Hence, we have 45. For a general $n$, we have
+\begin{equation*}
+\dfrac{n-1}{2}(1+n)+\dfrac{n+1}{2}=\dfrac{n^{2}-1}{2}+\dfrac{n+1}{2}=\dfrac{n^{2}+n}{2}
+\end{equation*}
+\newpage
+\subsection{Exercise 6}
+\textbf{Question:} For each of the following statements, fill in the blank with an easy-to-check criterion:\\
+\textbf{(a)} M is a triangular number if and only if \rule{1cm}{0.15mm} is an odd square.\\
+\textbf{(b)} N is an odd square if and only if \rule{1cm}{0.15mm} is a triangular number.\\
+\textbf{(c)} Prove that your criteria in (a) and (b) are correct.\\
+\\\textbf{Solution:}\\
+\textbf{(a)} M is a triangular number if and only if $8M+1$ is an odd square.\\
+\textbf{(b)} N is an odd square if and only if $\dfrac{N-1}{8}$ is a triangular number.\\
+\textbf{(c)} Let us start with (a). Let us assume that the number $M$ is a triangular number. This fact is equivalent to the fact there exist a natural or zero number $n\in \mathbb{N}\cup \{0\}$ such that $M = \dfrac{n(n+1)}{2}$. Let us complete the square of the right side of the equation.
+\begin{equation*}
+M = \dfrac{n(n+1)}{2} = \dfrac{1}{2}(n+\dfrac{1}{2})^2-\dfrac{1}{8}
+\end{equation*}
+which is equivalent to the fact that
+\begin{equation*}
+8M+1=4(n+\dfrac{1}{2})^2=(2n+1)^2
+\end{equation*}
+Hence, the fact that $8M+1$ is an odd square. Now we need to give a proof in the opposite direction. Let us assume that the number $8M+1$ is an odd square. This fact is equivalent to the fact that $\exists n\in \mathbb{N}\cup\{0\}$ such that $8M+1 = (2n+1)^2$. Moreover, let us open the brackets of this equation to express $M$.
+\begin{equation*}
+M = \dfrac{1}{8}(2n+1)^2-\dfrac{1}{8}=\dfrac{n(n+1)}{2}
+\end{equation*}
+which says that $M$ is a triangular number.\\
+\\ Now let us start (b). If $N$ is an odd square then, $\exists n\in \mathbb{N}\cup \{0\}$ such that $N = (2n+1)^2$. Then the number $N - 1 = 2n\cdot (2n+2)$ must be divisible by 8. Therefore, we have
+\begin{equation*}
+\dfrac{N-1}{8}=\dfrac{n(n+1)}{2}
+\end{equation*}
+which means that $\dfrac{N-1}{8}$ is a triangular number. If $\dfrac{N-1}{8}$ is a triangular number and there is a number $n\in \mathbb{N}\cup\{0\}$ such that $\dfrac{N-1}{8} = \dfrac{n(n+1)}{2}$. Hence, $N = (2n+1)^2$.
+\end{document}
