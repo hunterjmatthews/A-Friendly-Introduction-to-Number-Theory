@@ -10,7 +10,7 @@ A Friendly Introduction to Number Theory, Fourth Edition is designed to introduc
 | Chapter | Documents | Exercise Code |
 | ------- | --------- | ------------- |
 | 1. What is Number Theory? | <kbd>[TeX](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/blob/main/Chapters/Chapter%201/chapter1.tex)</kbd> <kbd>[PDF](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/blob/main/Chapters/Chapter%201/Chapter1.pdf)</kbd> | None |
-| 2. Pythagorean Triples | [TeX][PDF] | <kbd>[Python]()</kdb> |
+| 2. Pythagorean Triples | <kbd>[TeX](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/blob/main/Chapters/Chapter%202/Chapter2.tex)</kbd> <kbd>[PDF](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/blob/main/Chapters/Chapter%202/Chapter2.pdf)</kbd> | None |
 | 3. Pythagorean Triples and the Unit Circle | [TeX][PDF] | <kbd>[Python]()</kdb> |
 | 4. Sums of Higher Powers and Fermat's Last Theorem | [TeX][PDF] | <kbd>[Python]()</kdb> |
 | 5. Divisibility and the Greatest Common Divisor | [TeX][PDF] | <kbd>[Python]()</kdb> |
