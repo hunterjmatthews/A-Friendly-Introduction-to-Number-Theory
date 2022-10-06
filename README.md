@@ -6,7 +6,7 @@
 ## Description:
 A Friendly Introduction to Number Theory, Fourth Edition is designed to introduce readers to the overall themes and methodology of mathematics through the detailed study of one particular facet—number theory. Starting with nothing more than basic high school algebra, readers are gradually led to the point of actively performing mathematical research while getting a glimpse of current mathematical frontiers. The writing is appropriate for the undergraduate audience and includes many numerical examples, which are analyzed for patterns and used to make conjectures. Emphasis is on the methods used for proving theorems rather than on specific results.
 
-## Solutions to Exercises:
+## Solutions:
 | Chapter | Documents | Exercise Code |
 | ------- | --------- | ------------- |
 | 1. What is Number Theory? | <kbd>[TeX](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/blob/main/Chapters/Chapter%201/chapter1.tex)</kbd> <kbd>[PDF](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/blob/main/Chapters/Chapter%201/Chapter1.pdf)</kbd> | None |
