@@ -6,7 +6,6 @@ Make sure that you don’t go into an infinite loop if a and b are both zero!
 
 @Author: Hunter Matthews
 @Date: 10/19/22
-@Link: https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/edit/main/Chapters/Chapter%205/Exercise%20Code/5.2.py
 
 """
 
