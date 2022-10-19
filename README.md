@@ -9,4 +9,4 @@ A Friendly Introduction to Number Theory, Fourth Edition is designed to introduc
 ## Solutions:
 | Chapter | Documents | Exercise Code |
 | ------- | --------- | ------------- |
-| 14. Mersenne Primes | <kbd>[LaTeX]()</kbd> <kbd>[PDF]()</kbd> | N/A |
+| 14. Mersenne Primes | <kbd>[LaTeX](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/blob/main/Chapters/Chapter%2014/Chapter%2014.tex)</kbd> <kbd>[PDF](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/blob/main/Chapters/Chapter%2014/Chapter%2014.pdf)</kbd> | N/A |
