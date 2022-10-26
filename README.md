@@ -9,6 +9,7 @@ A Friendly Introduction to Number Theory, Fourth Edition is designed to introduc
 ## Solutions:
 | Chapter | Documents | Exercise Code |
 | ------- | --------- | ------------- |
+| 5. Divisibility and the Greatest Common Divisor | N/A | <kbd>[Python](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/tree/main/Chapters/Chapter%205/Exercise%20Code)</kbd>
 | 14. Mersenne Primes | <kbd>[LaTeX](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/blob/main/Chapters/Chapter%2014/Chapter%2014.tex)</kbd> <kbd>[PDF](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/blob/main/Chapters/Chapter%2014/Chapter%2014.pdf)</kbd> | N/A |
 | 15. Mersenne Primes and Perfect Numbers | N/A | <kbd>[Python](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/tree/main/Chapters/Chapter%2015/Exercise%20Code)</kbd> |
 | 17. Computing k<sup>th</sup> Roots Modulo m | N/A | <kbd>[Python](https://github.com/hunterjmatthews/A-Friendly-Introduction-to-Number-Theory/tree/main/Chapters/Chapter%2017/Exercise%20Code)</kbd> |
